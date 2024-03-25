@@ -1,10 +1,10 @@
 "use client";
 
-import HeaderMenu from "@/Utilities/HeaderMenu";
-import Pagination from "@/Utilities/Pagination";
-import AnimeList from "@/components/AnimeList";
+import Pagination from "./../../Utilities/Pagination";
 import React, { useEffect, useState } from "react";
-import { getAnimeResponse } from "../libs/api-libs";
+import { getAnimeResponse } from "../../libs/api-libs";
+import HeaderMenu from "./../../Utilities/HeaderMenu";
+import AnimeList from "./../../components/AnimeList/index";
 
 const Page = () => {
   const [page, setPage] = useState(1);

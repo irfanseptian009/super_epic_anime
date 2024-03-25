@@ -1,6 +1,4 @@
-
-
-import NavBar from "@/components/NavBar";
+import NavBar from "../components/NavBar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -14,8 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-color-dark `} suppressHydrationWarning={true}>
-       <NavBar/>
+      <body
+        className={`${inter.className} bg-color-dark `}
+        suppressHydrationWarning={true}
+      >
+        <NavBar />
         {children}
       </body>
     </html>
